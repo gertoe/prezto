@@ -148,7 +148,8 @@ else
   alias df='df -kh'
 fi
 
-alias du='du -kh'
+# do not alias du
+#alias du='du -kh'
 
 if (( $+commands[htop] )); then
   alias top=htop
