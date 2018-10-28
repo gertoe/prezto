@@ -595,7 +595,8 @@ prompt_pure_setup() {
 
 	# prompt turns red if the previous command didn't exit with 0
 	#PROMPT+='%(?.%F{white}.%F{red})${prompt_pure_state[prompt]}%f '
-	PROMPT+='%(?.%F{white}.%F{red})%#%f '
+	#PROMPT+='%(?.%F{white}.%F{red})%#%f '
+	PROMPT+='%(?..%F{red})%#%f '
 
 	RPROMPT=''
 	RPROMPT+='%(1j.%F{yellow}%(?..%?) ⚙️ (%j).%(?.%F{green}✔.%F{red}%? ✘))%f | %h | %*'
