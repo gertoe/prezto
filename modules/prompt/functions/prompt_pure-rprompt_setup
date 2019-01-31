@@ -546,7 +546,10 @@ prompt_pure_state_setup() {
 
 prompt_pure_setup() {
 	# Prevent percentage showing up if output doesn't end with a newline.
-	export PROMPT_EOL_MARK=''
+	#export PROMPT_EOL_MARK=''
+	#
+	# Use default behaviour
+  export PROMPT_EOL_MARK='%B%S%#%s%b'
 
 	prompt_opts=(subst percent)
 
